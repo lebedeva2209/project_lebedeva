@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- Заголовок -->
+    <header class="header container">
+        <!-- Логотип -->
+        <img class="heder__logo" src="images/logo.jpg" alt="Кондитерская" width="200" height="200">
+        <!--/ Логотип -->
+        <!-- Навигация -->
+        <nav class="header__menu">
+            <ul class="menu">
+                <li class="menu__item menu__item--active"><a class="menu__link" href="/">Главная</a></li>
+                <li class="menu__link"><a class="menu__link" href="#">Авторизация</a></li>
+                <li class="menu__link"><a class="menu__link" href="#">Ассортимент</a></li>
+                <li class="menu__link"><a class="menu__link" href="#">Создать заказ</a></li>
+            </ul>
+        </nav>
+        <!--/ Навигация -->
+        <button class="header__button" type="button">
+            <img class="header__enter" src="images/entry.png" alt="Войти" width="15" height="15">
+        </button>
+    </header>
+
+    <main class="main container">
+        <section class="sale">
+            <img class="sale__image" src="images/dissertspredl.jpg" width="300" height="300">
+            <div class="sale__wrapper">
+                <h2 class="sale__title">Кусочек счастья</h2>
+                <p class="sale__text">Лучшее предложение</p>
+            </div>
+        </section>
+
+        <section class="best">
+            <h2 class="best__title">Десерты недели</h2>
+            <ul class="best__list">
+                <li class="best__item">
+                    <img class="best__image" src="images/krugly.jpg" alt="Круглый круассан" width="100" height="100">
+                    <h3 class="best__title">Круглый круассан</h3>
+                    <p class=" best__product">Популярный круассан с большим количеством начинки</p>
+                    <a class="best__detail" href="#">Узнать подробнее</a>
+                </li>
+                <li class="best__item">
+                    <img class="best__image" src="images/tortvstakane.jpg" alt="Торт в стакане" width="300" height="300">
+                    <h3 class="best__title">Торт в стакане</h3>
+                    <p class="best__product">Удобный, вкусный, легкий, оформление по желанию</p>
+                    <a class="detail__best" href="#">Узнать подробнее</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="reviews">
+            <h3 class="reviews_text">Отзывы покупателей</h3>
+            <ul class="reviews__list">
+                <li class="reviews__element">
+                    <img class="reviews__image" src="images/mini.jpg" alt="Мини-пирожные" width="100" height="100"> 
+                    <p class="reviews__product">Очень вкусные и удобные мини-пирожные! Гости оценили</p>
+                </li>
+                <li class="reviews__element">
+                    <img class="reviews__image" src="images/kruassan.jpg" alt="Круглые круассаны" width="100" height="100">
+                    <p class="reviews__product">Просто потрясающие круглые круассаны, оочень много начинки</p>
+                </li>
+                <li class="reviews__element">
+                    <img class="reviews__image" src="images/tartot.jpg" alt="Тарт с ягодами" width="100" height="100">
+                    <p class="reviews__product">Тарты очень вкусные, свежие, много ягод, будем заказывать еще</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <p class="footer__authors">Сайт создан студентками Лебедевой Алиной и Пустяковой Любовью</p>
+    </footer>
+
+            <!-- Форма "Войдите в профиль" -->
+        <section class="entrance">
+            <button class="entrance__button" type="button"><img class="close" src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+            <h2 class="entrance__title">Войдите в профиль</h2>
+            <p class="entrance__text">Добавлять рецепты могут только зарегистрированные пользователи.</p>
+            <div class="entrance__input output">
+                <button class="enter__button" type="button">Войти</button>
+                <button class="registration_button" type="button">Регистрация</button>
+            </div>
+        </section>
+
+        <section class="registration">
+        <!--/ Форма "Войдите в профиль" -->
+        <!-- Форма "Регистрация" -->
+            <button class="button" type="registration_button"><img class="close__image" src="images/close.png" alt="Закрыть окно" width="24" height="24"></button>
+            <h2 class="registration">Регистрация</h2>
+            <form class="form__registration" action="/" method="post">
+                <input class="registration__input" type="text" name="name" placeholder="Имя" required>
+                <input class="registration__input" type="email" name="email" placeholder="Логин" required>
+                <fieldset>
+                    <div class="registration__div">
+                        <input type="password" name="password" placeholder="Пароль" required>
+                        <span>Минимум 8 символов</span>
+                    </div>
+                    <input class="password__input" type="password" name="repeat-password" placeholder="Повторите пароль" required>
+                </fieldset>
+                <fieldset>
+                    <input class="input" type="submit" value="Зарегистрироваться">
+                    <button class="button" type="button">Отмена</button>
+                </fieldset>
+                <button type="button">У меня уже есть аккаунт</button>
+            </form>
+        <!--/ Форма "Регистрация" -->
+        <!-- Форма "Войти" -->
+        </section>
+
+        <section class="password">
+        <button class="button" type="button"><img class="close_image" src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+        <h2 class="entrance">Войти</h2>
+        <form class="password" action="/" method="post">
+            <input type="email" name="email" placeholder="Логин" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <fieldset>
+                <input type="submit" value="Войти">
+                <button class="cancel__button" type="button">Отмена</button>
+            </fieldset>
+            <button class="button__not account" type="button">У меня еще нет аккаунта</button>
+        </form>
+    </section>
+    <!--/ Форма "Войти" -->
+</div>
+<!--/ Формы -->
+</body>
+    <section class="information">
+        <div class="information">
+            <h2 class="contact_information">Контактная информация</h2>
+            <p class="information_job time">Режим работы
+                ежедневно с 8:00 до 20:00
+            </p>
+        </div>
+    </section>
+</html>
+
+
